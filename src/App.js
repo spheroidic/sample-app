@@ -3,10 +3,10 @@ import { MyCalendar } from "./Components/MyCalendar"
 
 function App() {
   return (
-    <>
-      <p className="paragraph">This should go on the left</p>
-      <MyCalendar className="calendar" />
-    </>
+    <div className="grid-container">
+      <p className="paragraph">Left-side placeholder</p>
+      <MyCalendar className="mycalendar" />
+    </div>
   );
 }
 

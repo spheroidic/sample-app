@@ -1,10 +1,16 @@
-import Calendar from "@toast-ui/react-calendar";
-import "@toast-ui/calendar/dist/toastui-calendar.min.css";
+import "./MyCalendar.css";
 
 export const MyCalendar = () => {
+  const startTime = 8;
+  const endTime = 22;
+  const hours = Array.from({length: endTime - startTime}, (x, i) => i + startTime);
+
   return (
     <div>
-      <Calendar />
+      <h2>Calendar</h2>
+      <div className="testday">
+        {hours.map(hour => <div className="testhour" key={hour}>{hour}</div>)}
+      </div>
     </div>
-    );
+  );
 };

@@ -1,0 +1,14 @@
+.testday {
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    width: 25%; height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
+.testhour {
+    border-bottom: 1px dashed gray;
+    text-align: left;
+}

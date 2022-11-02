@@ -1,9 +1,15 @@
-.paragraph {
-  float: left;
-  width: 25%;
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  column-gap: 10px;
+  height: 100%; width: 100%;
 }
 
-.calendar {
-  float: right;
-  width: 75%;
+.paragraph {
+  text-align: center;
+}
+
+.mycalendar {
+  height: 100%; width: 100%;
+  text-align: center;
 }
